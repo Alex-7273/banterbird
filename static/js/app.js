@@ -7,8 +7,19 @@ function renderPost(post) {
     document.getElementById("feed").appendChild(template);
 }
 
-function submitPost() {
+async function submitPost() {
     const message = document.getElementById("postInput").value;
+    try {const response = await fetch ("/api/post",{
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            username,
+            message,
+        }),
+    })
+} catch (error){
     console.log("Would post:", message);
     alert("Tweet submitted (not really yet)");
 }
@@ -24,3 +35,4 @@ window.onload = async () => {
         console.error("you have activated my trap card", error);
     }
 };
+
