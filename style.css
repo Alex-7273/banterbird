@@ -1,0 +1,19 @@
+/* style.css */
+
+body {
+    
+    background-color: #482087;
+    padding: 20px;
+}
+.black-ops-one-regular {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+#shadow1 {
+    box-shadow: 5px 10px;
+  }
+#feed {
+    margin-top: 30px;
+}
