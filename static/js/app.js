@@ -3,7 +3,7 @@ if(!username){
   window.location.href = "/login"
 }
 
-function renderPost(post) {
+function renderPost(post, isNew = false) {
   const template = document
     .getElementById("post-template")
     .content.cloneNode(true);
